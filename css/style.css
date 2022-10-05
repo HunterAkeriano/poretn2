@@ -1,0 +1,161 @@
+body{
+    margin: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+a{
+    display: block;
+    text-decoration: none;
+}
+img{
+    display: block;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header_top{
+    background-color: black;
+    max-height: 44px;
+}
+
+.header-info{
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 0px;
+    max-height: 44px;
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header-left > span{
+    font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #969696;
+margin-left: 15px;
+}
+
+.header-right{
+    display: flex;
+    align-items: center;
+}
+.header-right > a{
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 16px;
+color: #969696;
+margin-left: 20px;
+opacity: 0.7;
+}
+.header-right > a:hover{
+    opacity: 1;
+}
+
+.header__bottom{
+    background-color: #0F0F0F;
+    max-height: 80px;
+}
+
+
+.header_container{
+    display: flex;
+    justify-content: space-between;
+    max-height: 80px;
+    align-items: center;
+}
+
+
+
+
+.nav{
+    display: flex;
+    list-style-type: none;
+    padding-left: 0;
+    margin: 0;
+    height: 80px;
+   
+    
+}
+.nav-link{
+    padding: 30px 20px;
+    font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 18px;
+text-transform: uppercase;
+
+color: #FFFFFF;
+opacity: 0.7;
+height: 80px;
+
+}
+.nav > li > a:hover{
+    opacity: 1;
+    background-color:  #1F1F1F;
+}
+.nav li:last-child{
+    padding: 30px 0px 30px 20px;
+    opacity: 0.7;
+}
+.nav li:last-child:hover{
+    opacity: 1;
+}
+.last:hover{
+    background-color:  #0F0F0F; 
+    opacity: 1;
+}
+.last-a:hover{
+    background-color:  #0F0F0F; 
+}
+
+
+.porten{
+    background: url("../img/background.png") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    height: 810px;
+    padding-top: 160px;
+}
+.porten-logo{
+    width: 320px;
+    height: 320px;
+    margin: 0 auto;
+    border: 4px solid #FFFFFF;;
+}
+.img-porten{
+    margin: 90px auto 0px auto;
+    padding-bottom: 15px;
+    border-bottom: 2px solid #FFFFFF;;
+}
+.logo-text{
+    font-style: normal;
+font-weight: 400;
+font-size: 22px;
+line-height: 28px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+margin: 0;
+margin-top: 10px;
+}
+
+.porten-text{
+    font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+/* or 24px */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #FFFFFF;
+margin: 80px auto 0px auto;
+width: 730px;
+}
