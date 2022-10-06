@@ -11,52 +11,72 @@
     <title>Document</title>
 </head>
 <body>
-    <div class="pagedsas">
-        <header>
-            <div class="header_top">
+    <!-- pages -->
+    <div class="page">
+        <!-- header -->
+        <header class="header">
+            <!-- Верхняя часть -->
+            <div class="header__top">
+                <!-- Глобальный контейнер -->
                 <div class="container">
-                    <div class="header-info">
-                        <div class="header-left">
-                            <img src="img/phone.svg" alt="phone">
-                            <span>8 (812) 123-45-67    |   Працюємо 7 днів на тиждень    |    9:00 — 18:00  </span>
+                    <!-- Родитель для 2-х блоков -->
+                    <div class="header__top-inner">
+                        <!-- Информация header-top -->
+                        <div class="header__top-info">
+                            <img class="info-img" src="img/phone.svg" alt="" >
+                            <span class="info-text">8 (812) 123-45-67</span>
+                            <span class="info-text">Працюємо 7 днів на тиждень</span>
+                            <span class="info-text info-last">9:00 — 18:00</span>
                         </div>
-                        <div class="header-right">
-                            <img src="img/login.svg" alt="">
-                            <a href="#">Вхід / Реєстрація</a>
+                        <!-- Вход -->
+                        <div class="header__top-logout">
+                            <img class="logout-img" src="img/login.svg" alt="" >
+                            <a class="logout-link" href="#" >Вхід</a>
+                            <a class="logout-link last-link" href="#" >Реєстрація</a>
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- Сам хедер -->
             <div class="header__bottom">
                 <div class="container">
-                    <div class="header_container">
-                    <div class="logo">
-                        <img src="img/logo.svg" alt="PORTEN" class="header_logo">
+                    <div class="header__content">
+                    <!-- logo -->
+                    <div class="header__logo">
+                        <img class="logo-img" src="img/logo.svg" alt="" >
                     </div>
-                    <nav>
-                        <ul class="nav">
-                            <li><a class="nav-link" href="#">Сподобалось</a></li>
-                            <li><a class="nav-link" href="#">Особистий кабінет</a></li>
-                            <li><a class="nav-link" href="#">Налаштування</a></li>
-                            <li><a class="nav-link last-a" href="#"><img  src="img/car.svg" alt=""></a></li>
-                            <li><a class="last-img" href="#"><img class="last" src="img/search.svg" alt=""></a></li>
+                    <!-- navigation -->
+                    <nav class="header__nav">
+                        <ul class="header__nav-ul">
+                            <li class="nav"><a class="nav-link" href="">Сподобалось</a></li>
+                            <li class="nav"><a class="nav-link" href="">Особистий кабінет</a></li>
+                            <li class="nav"><a class="nav-link" href="">Налаштування</a></li>
+                            <li class="nav"><a class="nav-link last-img-link last-car" href=""><img class="nav-img" src="img/car.svg" alt=""></a></li>
+                            <li class="nav"><a class="nav-link last-img-link" href=""><img class="nav-img " src="img/search.svg" alt=""></a></li>
                         </ul>
                     </nav>
                     </div>
                 </div>
             </div>
         </header>
-        <main>
-            <section class="porten">
+        <!-- main -->
+        <div class="main">
+            <section class="porten__content">
                 <div class="container">
-                    <div class="porten-logo">
-                        <img class="img-porten" src="img/porten-logo.svg" alt="">
-                        <p class="logo-text">івано-франківськ</p>
+                    <div class="content__logo-block">
+                        <div class="content__about-block">
+                        <img src="img/porten-logo.svg" alt="" class="content_logo-img">
+                        <p class="content__text">івано-франківськ</p>
+                         </div>
                     </div>
-                    <p class="porten-text">В магазинах Торговельній мережі Porten ви можете купити годинник у Бахмуті, Вінниці, Дніпрі, Житомирі, Запоріжжі, Івано-Франківську, Києві, Краматорську, Луцьку, Львові, Одесі, Покровську, Полтаві, Рівному, Слов'янську, Сумах, Тернополі, Харкові, Херсоні, Хмельницькому, Черкасах, Чернівцях, Чернігові , а також багатьох інших містах України</p>
+                    <div class="content__text-info">
+                        <p class="content__text-paragraph">
+                            В магазинах Торговельній мережі Porten ви можете купити годинник у Бахмуті, Вінниці, Дніпрі, Житомирі, Запоріжжі, Івано-Франківську, Києві, Краматорську, Луцьку, Львові, Одесі, Покровську, Полтаві, Рівному, Слов'янську, Сумах, Тернополі, Харкові, Херсоні, Хмельницькому, Черкасах, Чернівцях, Чернігові , а також багатьох інших містах України
+                        </p>
+                    </div>
                 </div>
             </section>
-        </main>
+        </div>
     </div>
 </body>
 </html>
