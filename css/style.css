@@ -129,6 +129,7 @@ a.nav-link.last:hover{
 /* ----burger--- */
 .humb{
     display: none;
+    cursor: pointer;
 }
 .burger{
     display: block;
@@ -138,7 +139,15 @@ a.nav-link.last:hover{
     transition: 0.3s;
     background-color: white;
 }
-
+.humb.active .burger:nth-child(2){
+    opacity: 0;
+}
+.humb.active .burger:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.humb.active .burger:nth-child(3){
+    transform: translateY(-8px) rotate(-45deg);
+}
 @media(max-width:800px){
     .nav-ul{
         position: fixed;
@@ -154,6 +163,13 @@ a.nav-link.last:hover{
     }
     .nav-li{
         margin: 10px 0px;
+    }
+    .nav-link{
+        padding: 0;
+    }
+    .nav-link:hover{
+        opacity: 1;
+        background-color: black;
     }
     .humb{
         display: block;
