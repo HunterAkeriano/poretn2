@@ -97,13 +97,14 @@ color: #969696;
 .nav-ul{
     display: flex;
     align-items: center;
+    text-align: center;
     height: 80px;
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
-.nav-link{
-    padding: 30px 20px;
+.nav-link{ 
+    padding: 31px 20px;
  font-style: normal;
 font-weight: 400;
 font-size: 14px;
