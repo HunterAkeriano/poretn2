@@ -11,72 +11,56 @@
     <title>Document</title>
 </head>
 <body>
-    <!-- pages -->
-    <div class="page">
-        <!-- header -->
+    
+    <div class="pages">
         <header class="header">
-            <!-- Верхняя часть -->
+            <!-- Верхняя шапка -->
             <div class="header__top">
-                <!-- Глобальный контейнер -->
                 <div class="container">
-                    <!-- Родитель для 2-х блоков -->
-                    <div class="header__top-inner">
-                        <!-- Информация header-top -->
-                        <div class="header__top-info">
-                            <img class="info-img" src="img/phone.svg" alt="" >
-                            <span class="info-text">8 (812) 123-45-67</span>
-                            <span class="info-text">Працюємо 7 днів на тиждень</span>
-                            <span class="info-text info-last">9:00 — 18:00</span>
+                    <div class="header__top-content">
+                        <!-- left block -->
+                        <div class="header__info">
+                            <img class="phone" src="img/phone.svg" alt="">
+                            <a href="tel:88121234567" class="phone-link">8 (812) 123-45-67</a>
+                            <span class="info middle-span">Працюємо 7 днів на тиждень</span>
+                            <span class="info">9:00 — 18:00</span>
                         </div>
-                        <!-- Вход -->
-                        <div class="header__top-logout">
-                            <img class="logout-img" src="img/login.svg" alt="" >
-                            <a class="logout-link" href="#" >Вхід</a>
-                            <a class="logout-link last-link" href="#" >Реєстрація</a>
+                        <!-- right block -->
+                        <div class="header__login">
+                            <img src="img/login.svg" alt="">
+                            <a class="login" href="#" >Увійти</a>
+                            <span class="login">/</span>
+                            <a class="login" href="#" >Реєстрація</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- Сам хедер -->
+            <!-- нижняя шапка -->
             <div class="header__bottom">
                 <div class="container">
-                    <div class="header__content">
-                    <!-- logo -->
-                    <div class="header__logo">
-                        <img class="logo-img" src="img/logo.svg" alt="" >
-                    </div>
-                    <!-- navigation -->
-                    <nav class="header__nav">
-                        <ul class="header__nav-ul">
-                            <li class="nav"><a class="nav-link" href="">Сподобалось</a></li>
-                            <li class="nav"><a class="nav-link" href="">Особистий кабінет</a></li>
-                            <li class="nav"><a class="nav-link" href="">Налаштування</a></li>
-                            <li class="nav"><a class="nav-link last-img-link last-car" href=""><img class="nav-img" src="img/car.svg" alt=""></a></li>
-                            <li class="nav"><a class="nav-link last-img-link" href=""><img class="nav-img " src="img/search.svg" alt=""></a></li>
-                        </ul>
-                    </nav>
+                    <div class="header__bottom-content">
+                        <div class="header__bottom-logo">
+                            <img class="logo" src="img/logo.svg" alt="">
+                        </div>
+                        <nav class="bottom-nav">
+                            <ul class="nav-ul">
+                                <li class="nav-li"> <a href="#" class="nav-link">Сподобалось</a> </li>
+                                <li class="nav-li"> <a href="#" class="nav-link">Особистий кабінет</a> </li>
+                                <li class="nav-li"> <a href="#" class="nav-link">Налаштування</a> </li>
+                                <li class="nav-li"> <a href="#" class="nav-link last"><img src="img/car.svg" alt=""></a> </li>
+                                <li class="nav-li"> <a href="#" class="nav-link last"><img src="img/search.svg" alt=""></a> </li>
+                            </ul>
+                        </nav>
+                        <div class="humb">
+                            <span class="burger"></span>
+                            <span class="burger"></span>
+                            <span class="burger"></span>
+                        </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- main -->
-        <div class="main">
-            <section class="porten__content">
-                <div class="container">
-                    <div class="content__logo-block">
-                        <div class="content__about-block">
-                        <img src="img/porten-logo.svg" alt="" class="content_logo-img">
-                        <p class="content__text">івано-франківськ</p>
-                         </div>
-                    </div>
-                    <div class="content__text-info">
-                        <p class="content__text-paragraph">
-                            В магазинах Торговельній мережі Porten ви можете купити годинник у Бахмуті, Вінниці, Дніпрі, Житомирі, Запоріжжі, Івано-Франківську, Києві, Краматорську, Луцьку, Львові, Одесі, Покровську, Полтаві, Рівному, Слов'янську, Сумах, Тернополі, Харкові, Херсоні, Хмельницькому, Черкасах, Чернівцях, Чернігові , а також багатьох інших містах України
-                        </p>
-                    </div>
-                </div>
-            </section>
-        </div>
     </div>
+<script src="js/script.js"></script>
 </body>
 </html>
