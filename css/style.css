@@ -185,7 +185,7 @@ a.nav-link.last:hover{
 
 /* main content */
 .porten{
-    background: url(".../img/background.jpg");
+    background: url("../img/background.jpg");
     background-size: cover;
     background-position: top center;
     padding: 160px 0px 155px 0px;
