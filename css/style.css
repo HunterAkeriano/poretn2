@@ -188,7 +188,8 @@ a.nav-link.last:hover{
     background: url(".../img/background.jpg");
     background-size: cover;
     background-position: top center;
-    padding: 160px 0px;
+    padding: 160px 0px 155px 0px;
+
 }
 .porten__content-logo{
     max-width: 320px;
