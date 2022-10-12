@@ -18,10 +18,14 @@ function closeMenu(){
 navLink.forEach(n => n.addEventListener('click', closeMenu));
 
 // slider
-const slider = document.querySelector('.slider-container')
+const slider = document.querySelector('.slider-container');
 
 let mySwiper;
-
+new Swiper(slider, {
+    slidesPerView: 3,
+    spaceBetween: 50,
+    slideClass: 'card',
+})
 function mobileSlider(){
     if(window.innerWidth <= 800  && slider.dataset.mobile == 'false'){
         mySwiper = new Swiper(slider, {

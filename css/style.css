@@ -38,6 +38,7 @@ a{
 }
 .header__info a, 
 .info{
+font-family: 'PT Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 12px;
@@ -64,6 +65,7 @@ color: #969696;
 
 .login{
     margin-left: 3px;
+    font-family: 'PT Sans';
  font-style: normal;
 font-weight: 400;
 font-size: 12px;
@@ -109,6 +111,7 @@ color: #969696;
 }
 .nav-link{ 
     padding: 31px 20px;
+    font-family: 'PT Sans';
  font-style: normal;
 font-weight: 400;
 font-size: 14px;
@@ -210,6 +213,7 @@ a.nav-link.last:hover{
     border-bottom: 2px solid #FFFFFF;
 }
 .text{
+    font-family: 'PT Sans';
     font-style: normal;
 font-weight: 400;
 font-size: 22px;
@@ -224,6 +228,7 @@ margin-top: 10px;
     margin: 80px auto 0px auto;
 }
 .content-text{
+    font-family: 'PT Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
@@ -241,14 +246,11 @@ color: #FFFFFF;
 }
 .collection__container{
     display: flex;
-    max-width: 1920px;
-    margin: 0 auto;
 }
 /* left */
 .collection__container-left{
-    padding: 95px 80px;
-    width: auto;
-   width: 100%;
+    padding: 95px 60px;
+    width: 60%;
 }
 .seazons{
 font-family: 'Playfair Display';
@@ -290,27 +292,30 @@ line-height: 21px;
 color: #D0D0D0;
 }
 
-.card{
-    margin-right: 50px;
+
+.swiper-wrapper{
+    width: 100%;
 }
 .card img{
-    background-color: #191B1C
+    background-color: #191B1C;
 }
 .swiper-button-prev,
 .swiper-button-next{
     display: none;
 }
 .slider-container{
+    margin: 0 auto;
     position: relative;
     overflow: hidden;
     max-width: 730px;
+    width: 100%;
 }
 
 .collection__container-right{
     background: url("../img/background-time.jpg");
     background-size: cover;
     padding-top: 494px;
-    width: 100%;
+    width: 40%;
 }
 .colection-title{
 font-family: 'Playfair Display';
@@ -320,17 +325,43 @@ font-size: 36px;
 line-height: 48px;
 text-align: center;
 text-transform: uppercase;
-text-align: center;
 max-width: 375px;
 color: #FFFFFF;
 margin: 0 auto
 }
-
+.colection-title::after{
+    content: "";
+    display: block;
+    width: 120px;
+    margin: 30px auto 0px auto;
+    height: 1px;
+    background-color: antiquewhite;
+}
+.colection-link{
+    display: block;
+    width: 138px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 12px 28px;
+    margin-top: 30px;
+    border: 1px solid white;
+    font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 23px;
+letter-spacing: 0.1em;
+text-transform: uppercase;
+color: #FFFFFF;
+}
 
 @media(max-width: 800px){
     .collection__container{
         display: flex;
         flex-direction: column;
+    }
+    .collection__container-left{
+        width: 100%;
     }
     .slider-container{
         max-width: 200px;
