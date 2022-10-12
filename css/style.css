@@ -2,6 +2,10 @@
 body{
     margin: 0;
     font-family: 'PT Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
 }
 a{
     text-decoration: none;
@@ -228,4 +232,122 @@ text-align: center;
 text-transform: uppercase;
 color: #FFFFFF;
 
+}
+
+
+/* ---------collection----- */
+.collection{
+    background-color: #0F0F0F;
+}
+.collection__container{
+    display: flex;
+    max-width: 1920px;
+    margin: 0 auto;
+}
+/* left */
+.collection__container-left{
+    padding: 95px 80px;
+    width: auto;
+   width: 100%;
+}
+.seazons{
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48px;
+text-align: center;
+text-transform: uppercase;
+
+/* white */
+color: #FFFFFF;
+padding-bottom: 50px;
+
+}
+.seazons::after{
+    content: "";
+    display: block;
+    width: 120px;
+    margin: 50px auto 0px auto;
+    height: 1px;
+    background-color: antiquewhite;
+}
+
+.seazons-text{
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+color: #FFFFFF;
+}
+.seazons-summ{
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+color: #D0D0D0;
+}
+
+.card{
+    margin-right: 50px;
+}
+.card img{
+    background-color: #191B1C
+}
+.swiper-button-prev,
+.swiper-button-next{
+    display: none;
+}
+.slider-container{
+    position: relative;
+    overflow: hidden;
+    max-width: 730px;
+}
+
+.collection__container-right{
+    background: url("../img/background-time.jpg");
+    background-size: cover;
+    padding-top: 494px;
+    width: 100%;
+}
+.colection-title{
+font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48px;
+text-align: center;
+text-transform: uppercase;
+text-align: center;
+max-width: 375px;
+color: #FFFFFF;
+margin: 0 auto
+}
+
+
+@media(max-width: 800px){
+    .collection__container{
+        display: flex;
+        flex-direction: column;
+    }
+    .slider-container{
+        max-width: 200px;
+        margin: 0 auto;
+    }
+    .card{
+        width: 100%;
+        margin: 0;
+    }
+    .swiper-wrapper{
+        flex-wrap: nowrap;
+    }
+    .swiper-button-prev,
+.swiper-button-next{
+    display: block;
+}
+.collection__container-right{
+    width: auto;
+}
 }

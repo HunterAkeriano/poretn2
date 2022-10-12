@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
@@ -62,6 +66,7 @@
         </header>
         <!-- main content -->
         <main class="main">
+            <!-- 1-я секция -->
             <section class="porten">
                 <div class="container">
                     <div class="porten__content">
@@ -75,8 +80,43 @@
                     </div>
                 </div>
             </section>
+            <!-- 2-я секция -->
+            <section class="collection">
+                <!-- container -->
+                <div class="collection__container">
+                    <div class="collection__container-left">
+                        <h2 class="seazons">СЕЗОН 2021/22</h2>
+                        <div class="slider-container swiper-no-swiping" data-mobile="false">
+                            <div class="swiper-wrapper">
+                                <div class="card">
+                                    <img src="img/time_1.png" alt="">
+                                    <p class="seazons-text">Louis XVI ATHOS</p>
+                                    <p class="seazons-summ">13 600 грн.  </p>
+                                </div>
+                                <div class="card">
+                                    <img src="img/time_2.png" alt="">
+                                    <p class="seazons-text">Carl von Zeyten</p>
+                                    <p class="seazons-summ">16 500 грн.   </p>
+                                </div>
+                                <div class="card">
+                                    <img src="img/time_3.png" alt="">
+                                    <p class="seazons-text">JORD AR5905</p>
+                                    <p class="seazons-summ">65 000 грн.     </p>
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev"></div>
+                             <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="collection__container-right">
+                        <h2 class="colection-title">Нова колекція</h2>
+                        <a class="colection-lonk" href="#">Каталог</a>
+                    </div>
+                </div>
+            </section>
         </main>
     </div>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 <script src="js/script.js"></script>
 </body>
 </html>

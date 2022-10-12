@@ -15,4 +15,36 @@ function closeMenu(){
     navMenu.classList.remove('active');
 }
 
-navLink.forEach(n => n.addEventListener('click', closeMenu))
+navLink.forEach(n => n.addEventListener('click', closeMenu));
+
+// slider
+const slider = document.querySelector('.slider-container')
+
+let mySwiper;
+
+function mobileSlider(){
+    if(window.innerWidth <= 800  && slider.dataset.mobile == 'false'){
+        mySwiper = new Swiper(slider, {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            loop: true,
+            slideClass: 'card',
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
+              }
+        });
+
+        slider.dataset.mobile = 'true';
+    }
+    if(window.innerWidth > 800){
+        slider.dataset.mobile = 'false';
+        if(slider.classList.contains('swiper-container-initialized')){
+            mySwiper.destroy();
+        }
+    }
+}
+mobileSlider();
+window.addEventListener('resize', () =>{
+    mobileSlider();
+})
