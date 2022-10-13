@@ -111,6 +111,7 @@ color: #969696;
 }
 .nav-link{ 
     padding: 31px 20px;
+    display: block;
     font-family: 'PT Sans';
  font-style: normal;
 font-weight: 400;
