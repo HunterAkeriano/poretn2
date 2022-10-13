@@ -125,6 +125,9 @@ color: #FFFFFF;
     opacity: 1;
     background-color: #1F1F1F;
 }
+.last{
+    padding: 0 20px;
+}
 a.nav-link.last{
     opacity: 1;
    
