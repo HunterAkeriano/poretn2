@@ -4,119 +4,124 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
-    
     <div class="pages">
+        <!-- header -->
         <header class="header">
-            <!-- Верхняя шапка -->
+            <!-- top -->
             <div class="header__top">
                 <div class="container">
-                    <div class="header__top-content">
-                        <!-- left block -->
-                        <div class="header__info">
-                            <img class="phone" src="img/phone.svg" alt="">
-                            <a href="tel:88121234567" class="phone-link">8 (812) 123-45-67</a>
-                            <span class="info middle-span">Працюємо 7 днів на тиждень</span>
-                            <span class="info">9:00 — 18:00</span>
+                    <div class="header__top-inner">
+                        <div class="header__top-left">
+                            <img src="image/phone.svg" alt="" class="phone">
+                            <a class="phone-link" href="tel:+368456453" >8 (812) 123-45-67 </a>
+                            <span class="header-info text">Працюємо 7 днів на тиждень</span>
+                            <span class="header-info"> 9:00 — 18:00</span>
                         </div>
-                        <!-- right block -->
-                        <div class="header__login">
-                            <img src="img/login.svg" alt="">
-                            <a class="login" href="#" >Увійти</a>
-                            <span class="login">/</span>
-                            <a class="login" href="#" >Реєстрація</a>
+                        <div class="header__top-right">
+                            <img class="login" src="image/login.svg" alt="">
+                            <a class="header-login" href="">Вхід</a>
+                            <span class="header-login login-middle">/</span>
+                            <a class="header-login" href="">Реєстрація</a>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- нижняя шапка -->
+            <!-- bottom -->
             <div class="header__bottom">
                 <div class="container">
-                    <div class="header__bottom-content">
-                        <div class="header__bottom-logo">
-                            <img class="logo" src="img/logo.svg" alt="">
+                    <div class="header__boottom-inner">
+                        <div class="header-logo">
+                            <a href="index.html"><img class="logo" src="image/logo.svg" alt=""></a>
                         </div>
-                        <nav class="bottom-nav">
-                            <ul class="nav-ul">
-                                <li class="nav-li"> <a href="#" class="nav-link">Сподобалось</a> </li>
-                                <li class="nav-li"> <a href="#" class="nav-link">Особистий кабінет</a> </li>
-                                <li class="nav-li"> <a href="#" class="nav-link">Налаштування</a> </li>
-                                <li class="nav-li"> <a href="#" class="nav-link last"><img src="img/car.svg" alt=""></a> </li>
-                                <li class="nav-li"> <a href="#" class="nav-link last"><img src="img/search.svg" alt=""></a> </li>
+                        <nav class="header-link">
+                            <ul class="ul-link">
+                                <li class="li-link"><a href="#" class="nav-link">сподобалось</a></li>
+                                <li class="li-link"><a href="#" class="nav-link">Особистий кабінет</a></li>
+                                <li class="li-link"><a href="#" class="nav-link">налаштування</a></li>
+                                <li class="li-link"><a href="#" class="nav-link img-link"><img src="image/car.svg" alt=""></a></li>
+                                <li class="li-link"><a href="#" class="nav-link img-link"><img src="image/search.svg" alt=""></a></li>
                             </ul>
                         </nav>
-                        <div class="humb">
-                            <span class="burger"></span>
-                            <span class="burger"></span>
-                            <span class="burger"></span>
+                        <div class="burger">
+                            <span class="humb"></span>
+                            <span class="humb"></span>
+                            <span class="humb"></span>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
-        <!-- main content -->
         <main class="main">
-            <!-- 1-я секция -->
             <section class="porten">
                 <div class="container">
-                    <div class="porten__content">
-                        <div class="porten__content-logo">
-                            <img class="content-logo" src="img/porten-logo.svg" alt="">
-                            <p class="text">івано-франківськ</p>
-                        </div>
-                        <div class="porten__content-text">
-                            <p class="content-text">В магазинах Торговельній мережі Porten ви можете купити годинник у Бахмуті, Вінниці, Дніпрі, Житомирі, Запоріжжі, Івано-Франківську, Києві, Краматорську, Луцьку, Львові, Одесі, Покровську, Полтаві, Рівному, Слов'янську, Сумах, Тернополі, Харкові, Херсоні, Хмельницькому, Черкасах, Чернівцях, Чернігові , а також багатьох інших містах України</p>
+                    <div class="porten__block">
+                        <img class="porten__block-img" src="image/porten-logo.svg" alt="">
+                        <h1 class="porten__block-title">івано-франківськ</h1>
+                    </div>
+                    <p class="porten__block-text">В магазинах Торговельній мережі Porten ви можете купити годинник у Бахмуті, Вінниці, Дніпрі, Житомирі, Запоріжжі, Івано-Франківську, Києві, Краматорську, Луцьку, Львові, Одесі, Покровську, Полтаві, Рівному, Слов'янську, Сумах, Тернополі, Харкові, Херсоні, Хмельницькому, Черкасах, Чернівцях, Чернігові , а також багатьох інших містах України</p>
+                </div>
+            </section>
+            <section class="time">
+                <div class="time__left">
+                    <h2 class="time__left-title">СЕЗОН 2021/22</h2>
+                    
+                    <div class="slide-container swiper">
+                        <div class="slide-content">
+                            <div class="card-wrapper swiper-wrapper">
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <div class="card-image">
+                                            <img src="image/time_1.png" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="seazons-text">Louis XVI ATHOS</h3>
+                                        <p class="seazons-summ">13 600 грн.</p>
+                                    </div>
+                                </div>
+            
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <div class="card-image">
+                                            <img src="image/time_2.png" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="seazons-text">Carl von Zeyten</h3>
+                                        <p class="seazons-summ">16 500 грн</p>
+                                    </div>
+                                </div>
+            
+                                <div class="card swiper-slide">
+                                    <div class="image-content">
+                                        <div class="card-image">
+                                            <img src="image/time_3.png" alt="" class="card-img">
+                                        </div>
+                                    </div>
+                                    <div class="card-content">
+                                        <h3 class="seazons-text">JORD AR5905</h3>
+                                        <p class="seazons-summ">65 000 грн</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-button-next swiper-navBtn"></div>
+                            <div class="swiper-button-prev swiper-navBtn"></div>
                         </div>
                     </div>
                 </div>
-            </section>
-            <!-- 2-я секция -->
-            <section class="collection">
-                <!-- container -->
-                <div class="collection__container">
-                    <div class="collection__container-left">
-                        <h2 class="seazons">СЕЗОН 2021/22</h2>
-                        <div class="slider-container swiper-no-swiping" data-mobile="false">
-                            <div class="swiper-wrapper">
-                                <div class="card">
-                                    <img src="img/time_1.png" alt="">
-                                    <p class="seazons-text">Louis XVI ATHOS</p>
-                                    <p class="seazons-summ">13 600 грн.  </p>
-                                </div>
-                                <div class="card">
-                                    <img src="img/time_2.png" alt="">
-                                    <p class="seazons-text">Carl von Zeyten</p>
-                                    <p class="seazons-summ">16 500 грн.   </p>
-                                </div>
-                                <div class="card">
-                                    <img src="img/time_3.png" alt="">
-                                    <p class="seazons-text">JORD AR5905</p>
-                                    <p class="seazons-summ">65 000 грн.     </p>
-                                </div>
-                            </div>
-                            <div class="swiper-button-prev"></div>
-                             <div class="swiper-button-next"></div>
-                        </div>
-                    </div>
-                    <div class="collection__container-right">
-                        <h2 class="colection-title">Нова колекція</h2>
-                        <a class="colection-link" href="#">Каталог</a>
-                    </div>
+                <div class="time__right">
+                    <h2 class="time__right-title">Нова колекція</h2>
+                    <a href="#" class="time__right-link">Каталог</a>
                 </div>
             </section>
         </main>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-<script src="js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+   <script src="js/script.js"></script>
 </body>
 </html>
