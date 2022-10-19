@@ -238,16 +238,6 @@ opacity: 0.7;
     width: 50%;
     min-width: 0;
 }
-.seazons-text,
-.seazons-summ{
- font-family: 'Playfair Display';
-font-style: normal;
-font-weight: 400;
-font-size: 18px;
-line-height: 24px;
-
-color: #FFFFFF;
-}
 .time__left-title{
     font-family: 'Playfair Display';
 font-style: normal;
@@ -267,11 +257,36 @@ color: #FFFFFF;
     height: 1px;
     background-color: antiquewhite;
 }
-.card-img{
-    background-color: #1F1F1F;
-    padding: 27px 20px;
+.swiper1{
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+.container-swiper{
+    max-width: 260px;
+    margin: 0 auto;
+}
+.swiper-img{
+    background-color: #191B1C;
+    padding: 20px;
+}
+.swiper-title,
+.swiper-summ{
+    font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 16px;
+line-height: 21px;
+
+/* light-gray */
+text-align: left;
+color: #D0D0D0;
 }
 
+.swiper-button-prev,
+.swiper-button-next{
+    position: absolute;
+}
 
 .time__right{
     background: url("../image/background-time.jpg");
@@ -329,9 +344,5 @@ color: #FFFFFF;
     }
     .time__right{
         width: 100%;
-    }
-    .slide-container{
-        margin: 0;
-        padding-left: 100px;
     }
 }

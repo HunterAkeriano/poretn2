@@ -17,7 +17,7 @@ function closeMenu(){
 
 navLink.forEach(n => n.addEventListener('click', closeMenu));
 
-let swiper = new Swiper(".slide-content",{
+let swiper = new Swiper(".swiper-container",{
    spaceBetween: 50,
 
    centerSlides: 'true',
