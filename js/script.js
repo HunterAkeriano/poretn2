@@ -17,8 +17,8 @@ function closeMenu(){
 
 navLink.forEach(n => n.addEventListener('click', closeMenu));
 
-let swiper = new Swiper(".swiper-container",{
-   spaceBetween: 50,
+let swiper = new Swiper(".swiper1",{
+   spaceBetween: 1,
 
    centerSlides: 'true',
    fade: 'true',
@@ -38,3 +38,26 @@ let swiper = new Swiper(".swiper-container",{
        },
    }
  });
+
+// Слайдер на 8 блоков
+
+let swiper2 = new Swiper(".swiper2",{
+    centerSlides: 'true',
+    fade: 'true',
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        950: {
+            slidesPerView: 1,
+        },
+        1061: {
+            slidesPerView: 4,
+        },
+    }
+  });
+ 

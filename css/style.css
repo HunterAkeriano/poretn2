@@ -1,5 +1,7 @@
 body{
     margin: 0;
+    font-family: 'Playfair Display', serif;
+    font-family: 'PT Sans', sans-serif;
 }
 a{
     text-decoration: none;
@@ -234,7 +236,7 @@ opacity: 0.7;
 }
 .time__left{
     padding-top: 93px;
-    padding: 93px 80px ;
+    padding: 90px 0 ;
     width: 50%;
     min-width: 0;
 }
@@ -277,16 +279,14 @@ font-style: normal;
 font-weight: 700;
 font-size: 16px;
 line-height: 21px;
-
 /* light-gray */
 text-align: left;
 color: #D0D0D0;
 }
-
-.swiper-button-prev,
-.swiper-button-next{
-    position: absolute;
+.swiper-summ{
+    margin-bottom: 40px;
 }
+
 
 .time__right{
     background: url("../image/background-time.jpg");
@@ -294,6 +294,7 @@ color: #D0D0D0;
     background-position: top center;
     width: 50%;
     padding-top: 484px;
+    padding-bottom: 100px;
 }
 .time__right-title{
     font-family: 'Playfair Display';
@@ -308,6 +309,7 @@ color: #D0D0D0;
     
     color: #FFFFFF;
 }
+
 .time__right-title::after{
     content: "";
     display: block;
@@ -334,6 +336,10 @@ text-transform: uppercase;
 
 color: #FFFFFF;
 }
+.swiper-button-prev,
+.swiper-button-next{
+    display: none;
+}
 @media(max-width: 1900px){
     .time{
         flex-direction: column;
@@ -344,5 +350,174 @@ color: #FFFFFF;
     }
     .time__right{
         width: 100%;
+        background-position: top left ;
+    }
+
+
+}
+
+
+@media(max-width: 1050px){
+    .swiper2{
+         position: relative; 
+    }
+    .swiper-button-prev{
+        display: inline;
+        position: absolute;
+    }
+    .swiper-button-next{
+        display: inline;
+        position: absolute;
+    }
+
+}
+
+
+/* collection */
+.collection{
+    display: flex;
+}
+.collection__left{
+    background: url("../image/costume.jpg") no-repeat;
+    background-size: cover;
+    background-position: top center;
+    width: 100%;
+    max-width: 936px;
+}
+@media(max-width: 1900px){
+    .collection{
+        flex-direction: column-reverse;
+    }
+    .collection__left{
+        max-width: 1900px;
+        height: 600px;
+    }
+}
+.collection__right{
+    background-color: #0F0F0F;
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 98px;
+   
+}
+.collection__right-title{
+    font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+font-size: 36px;
+line-height: 48px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.collection__right-title::after{
+    content: "";
+    display: block;
+    width: 120px;
+    margin: 40px auto 0;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+.collection__right-text{
+    max-width: 628px;
+    font-family: 'PT Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+color: #FFFFFF;
+margin: 40px auto 0;
+}
+
+.collection__right-link{
+    display: block;
+    margin: 64px auto 0;
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding: 12px 28px;
+    max-width: 350px;
+    border: 1px solid white;
+}
+
+/* new time */
+.newtime{
+    background-color: #000000;
+    padding-top: 120px;
+}
+.newtime-title{
+    font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 48px;
+text-align: center;
+text-transform: uppercase;
+color: #FFFFFF;
+}
+.newtime-title::after{
+    content: "";
+    display: block;
+    width: 120px;
+    margin: 40px auto 0;
+    height: 1px;
+    background-color: #FFFFFF;
+}
+
+.swiper2{
+    margin-top: 40px;
+    overflow: hidden;
+}
+.swiper02{
+    display: flex;
+    flex-wrap: wrap;
+}
+.container-card{
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+.last-img{
+   padding-top: 0;
+   padding-bottom: 0;
+   height: 304px;
+   max-width: 260px;
+}
+
+.card{
+    background: #191B1C;
+    padding: 130px 37px;
+    background: url("../image/time_3.png") no-repeat;
+    background-position:  center;
+    backdrop-filter: blur(10px);
+}
+.card-link{
+    display: block;
+    margin: 0 auto;
+    font-family: 'Playfair Display';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 24px;
+/* identical to box height */
+
+text-align: center;
+
+color: #FFFFFF;
+border: 1px solid wheat;
+padding: 12px 28px;
+filter: blur(0);
+}
+
+@media(max-width:920px){
+    .swiper02{
+        flex-wrap: nowrap;
     }
 }
