@@ -61,3 +61,31 @@ let swiper2 = new Swiper(".swiper2",{
     }
   });
  
+
+  let swiper3 = new Swiper(".swiper3",{
+    spaceBetween: 30,
+    centerSlides: 'true',
+    fade: 'true',
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        320: {
+            slidesPerView: 1,
+        },
+        950: {
+            slidesPerView: 1,
+        },
+        1061: {
+            slidesPerView: 2,
+        },
+        1200:{
+            slidesPerView: 3,
+        },
+        1500:{
+            slidesPerView: 4,
+        }
+        
+    }
+  });
